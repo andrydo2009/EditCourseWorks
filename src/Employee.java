@@ -3,9 +3,9 @@ import java.util.Objects;
 
 public class Employee {
     private final int id;                // id сотрудника
-    private String firstNameEmployee;     //Имя
-    private String middleNameEmployee;    //Отчевство
-    private String lastNameEmployee;      //Фамилия
+    private final String firstNameEmployee;     //Имя
+    private final String middleNameEmployee;    //Отчевство
+    private final String lastNameEmployee;      //Фамилия
     int department;                    // отдел
 
     private static int count = 1;          //переменная для счетчика
@@ -45,8 +45,7 @@ public class Employee {
         Employee employee = (Employee) o;
         return Objects.equals(firstNameEmployee, employee.firstNameEmployee)
                 && Objects.equals(middleNameEmployee, employee.middleNameEmployee)
-                && Objects.equals(firstNameEmployee, employee.firstNameEmployee) &&
-                Objects.equals(id, employee.id) && Objects.equals(department, employee.department)
+                && Objects.equals(id, employee.id) && Objects.equals(department, employee.department)
                 && Objects.equals(salaryEmployeeMonth, employee.salaryEmployeeMonth);
     }
 
@@ -61,3 +60,6 @@ public class Employee {
                 + " " + department + " отдел" + ", зарплата за месяц = " + salaryEmployeeMonth + " рублей";
     }
 }
+
+
+//THE END
