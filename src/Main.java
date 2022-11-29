@@ -37,9 +37,13 @@ public class Main {
 
         Employee[] listEmployee = {employee1, employee2, employee3, employee4, employee5, employee6, employee7, employee8, employee9, employee10};
         System.out.println(Arrays.toString(listEmployee));
+
         System.out.println(ServiceListEmployee.getSumSalary(listEmployee));
         System.out.println(ServiceListEmployee.searchMaxSalary(listEmployee));
         System.out.println(ServiceListEmployee.searchMinSalary(listEmployee));
         System.out.println(ServiceListEmployee.getAverageSalary(listEmployee));
     }
 }
+
+
+//THE END
