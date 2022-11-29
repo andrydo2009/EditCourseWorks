@@ -42,6 +42,9 @@ public class Main {
         System.out.println(ServiceListEmployee.searchMaxSalary(listEmployee));
         System.out.println(ServiceListEmployee.searchMinSalary(listEmployee));
         System.out.println(ServiceListEmployee.getAverageSalary(listEmployee));
+        System.out.println(employee2.getDepartment());
+        employee1.setSalaryEmployeeMonth(115000);
+        employee2.setDepartment(5); 
     }
 }
 
